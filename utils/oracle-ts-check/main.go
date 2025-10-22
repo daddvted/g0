@@ -202,7 +202,7 @@ func main() {
 
 	// Simplified DSN for go-ora/v2
 	dsn := fmt.Sprintf("oracle://%s:%s@%s", username, password, connStr)
-	fmt.Println(dsn)
+	// fmt.Println(dsn)
 
 	conn, err := sql.Open("oracle", dsn)
 	exitOnError("error while connecting to "+connStr+":", err)
